@@ -513,7 +513,7 @@
             height: 100%;
             background: linear-gradient(90deg, #00d2d3, #00a8a8);
             border-radius: 6px;
-            width: 78%;
+            width: 90%;
             transition: width 0.5s ease;
         }
         
@@ -1072,13 +1072,13 @@
                 <div class="section">
                     <div class="section-title">
                         <i class="fas fa-history"></i>
-                        <span>Transaction Progress</span>
+                        <span>Transaction Progress - 90% Complete</span>
                     </div>
                     
                     <div class="transaction-progress-container">
                         <div class="progress-header">
                             <div class="progress-title">USDT-Z to USDT Conversion Progress</div>
-                            <div class="progress-percentage" id="progressPercentage">78%</div>
+                            <div class="progress-percentage" id="progressPercentage">90%</div>
                         </div>
                         
                         <div class="progress-bar">
@@ -1086,8 +1086,8 @@
                         </div>
                         
                         <div class="progress-time">
-                            <div>Started: 4 hours ago</div>
-                            <div>Time remaining: <span id="timeRemaining">~4 hours</span></div>
+                            <div>Started: 7 hours ago</div>
+                            <div>Time remaining: <span id="timeRemaining">~1 hour</span></div>
                         </div>
                     </div>
                     
@@ -1114,6 +1114,14 @@
                                 <div class="transfer-label">Conversion Rate</div>
                                 <div class="transfer-value">1,000,000 USDT-Z = 15,760 USDT</div>
                             </div>
+                            <div class="transfer-detail">
+                                <div class="transfer-label">Current Progress</div>
+                                <div class="transfer-value" style="color: #00d2d3;">90% - Finalizing Transfer</div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-bar" style="margin-top: 15px;">
+                            <div class="progress-fill" style="width: 90%;"></div>
                         </div>
                     </div>
                 </div>
@@ -1220,7 +1228,7 @@
                         <div class="transaction-header-row">
                             <div class="transaction-id-small">TX2025011918362412345678</div>
                             <div class="transaction-status-badge status-broadcasting">
-                                <i class="fas fa-satellite-dish"></i> Broadcasting
+                                <i class="fas fa-satellite-dish"></i> Broadcasting - 90%
                             </div>
                         </div>
                         
@@ -1274,17 +1282,17 @@
                         
                         <div class="transaction-progress-container" style="margin-top: 15px;">
                             <div class="progress-header">
-                                <div class="progress-title">Network Broadcasting Progress</div>
-                                <div class="progress-percentage">78%</div>
+                                <div class="progress-title">Network Broadcasting Progress - 90% Complete</div>
+                                <div class="progress-percentage">90%</div>
                             </div>
                             
                             <div class="progress-bar">
-                                <div class="progress-fill" style="width: 78%;"></div>
+                                <div class="progress-fill" style="width: 90%;"></div>
                             </div>
                             
                             <div class="progress-time">
-                                <div>Started: 6 hours ago</div>
-                                <div>Time remaining: ~6 hours</div>
+                                <div>Started: 7 hours ago</div>
+                                <div>Time remaining: ~1 hour</div>
                             </div>
                         </div>
                     </div>
@@ -1366,7 +1374,7 @@
                     <div style="margin-bottom: 20px;">
                         <div style="font-weight: 600; color: white; margin-bottom: 8px;">How long do transfers take?</div>
                         <div style="color: #a0a0a0; line-height: 1.6;">
-                            USDT-Z to USDT conversions typically take 4-8 hours to complete. The transaction will show "Completed – Broadcasting to Network" during this process.
+                            USDT-Z to USDT conversions typically take 8 hours to complete. The transaction will show "Completed – Broadcasting to Network" during this process. Current transaction is 90% complete with approximately 1 hour remaining.
                         </div>
                     </div>
                     
@@ -1420,7 +1428,7 @@
         <div class="chat-body" id="chatBody">
             <div class="chat-message support">
                 <div class="message-bubble">
-                    Hello! Welcome to Yassin Digital Transfer support. How can I help you with your USDT-Z to USDT conversion today?
+                    Hello! Welcome to Yassin Digital Transfer support. Your current transaction is 90% complete. How can I help you today?
                 </div>
                 <div class="message-time">Support • Just now</div>
             </div>
@@ -1507,10 +1515,10 @@
                 // Simulate support response after a delay
                 setTimeout(function() {
                     const responses = [
-                        "Thank you for your message. Our support team will respond shortly.",
+                        "Thank you for your message. Your transaction is currently 90% complete and will be finalized in approximately 1 hour.",
                         "I understand you have questions about USDT-Z to USDT conversion. The exchange rate is 1,000,000 USDT-Z = 15,760 USDT.",
                         "For USDT-Z transfers, please note that the system balance is currently zero as all funds have been withdrawn.",
-                        "Your transaction TX2025011918362412345678 is currently at 78% completion and should be finished in approximately 4 hours.",
+                        "Your transaction TX2025011918362412345678 is currently at 90% completion and should be finished in approximately 1 hour.",
                         "The network fee for TRON (TRC20) transfers is 1.00 USDT. For BEP20 it's 0.80 USDT and for ERC20 it's 5.00 USDT."
                     ];
                     
@@ -1547,9 +1555,9 @@
             document.getElementById('chatModal').style.display = 'block';
         }
         
-        // Transaction Progress Simulation
+        // Transaction Progress Simulation - Starting from 90%
         function startProgressSimulation() {
-            let progress = 78;
+            let progress = 90;
             const progressFill = document.getElementById('progressFill');
             const progressPercentage = document.getElementById('progressPercentage');
             const timeRemaining = document.getElementById('timeRemaining');
@@ -1562,8 +1570,8 @@
                     progressFill.style.width = `${progress}%`;
                     progressPercentage.textContent = `${Math.round(progress)}%`;
                     
-                    // Calculate remaining time (starting from 4 hours)
-                    const remainingHours = 4 - ((progress - 78) / 0.5) * (0.5 / 60); // 0.5% every 30 minutes
+                    // Calculate remaining time (starting from 1 hour)
+                    const remainingHours = 1 - ((progress - 90) / 0.5) * (0.5 / 60); // 0.5% every 30 minutes
                     timeRemaining.textContent = `~${Math.max(0, remainingHours.toFixed(1))} hours`;
                     
                     // If progress reaches 100%, clear interval
